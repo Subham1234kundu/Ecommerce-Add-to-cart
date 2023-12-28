@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*
+!Navbar design
+*/
+.navbar{
+background-color: #212529;
+color: white;
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 25px 60px;
+margin-bottom: 30px;
+}
+.cart{
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 4px;
+}
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+/*
+! Shops item
+*/
+
+.shop{
+   display: grid;
+   grid-template-columns: repeat(4,223px);
+   gap: 30px;
+   justify-content: center;
+
+}
+@media(max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }
+}
+@media(max-width: 600px){
+    .shop{
+        grid-template-columns: repeat(1,223px);
+    }
+}
+.item {
+   border: 2px solid #212529;
+   border-radius: 2px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+}
+.bi-dash-lg{
+    color: red;
+    cursor: pointer;
+}
+.bi-plus-lg{
+    color: green;
+    cursor: pointer;
+}
+
+/*
+!Style rule for label and shoppingCart items
+*/
+.label{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homeBtn,.checkout,.removeAll{
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+.bi-x-lg{
+    color: red;
+    font-weight: bolder;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,380px);
+    justify-content: center;
+    gap: 15px;
+    
+}
+.cart-item{
+    border: 2px solid #212529;
+    display: flex;
+    border-radius:5px ;
+}
+.title-price-x{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10PX;
+}
+.cart-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4PX;
+    padding: 3PX;
+}
+
+
+
+.checkout{
+ background-color: rgb(1, 168, 1);
+}
+.removeAll{
+ background-color: rgb(165, 77, 77);
+}
